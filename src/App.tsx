@@ -4,7 +4,7 @@ import "./index.css";
 
 function App() {
   return (
-    <main className="bg-[#0016262a] border-1 border-white rounded-md w-90 font-sans grid grid-cols-1 grid-rows-2 gap-4 md:scale-110 p-4">
+    <main className="font-sans font-bold text-lg md:text-[1.25rem] grid grid-cols-1 grid-rows-2 p-4 gap-3 w-dvw md:w-96">
       <Profile />
       <Links />
     </main>
