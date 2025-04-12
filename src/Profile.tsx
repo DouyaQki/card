@@ -3,7 +3,7 @@ import placeholder from "./assets/placeholder.jpg";
 const STYLE_PROFILE_SECTION =
   "text-[#b8bcc3] flex flex-col justify-center items-center gap-1";
 const STYLE_CONTAINER_DIV = "flex flex-col justify-center items-center";
-const STYLE_IMG = "rounded-full h-32 md:h-40";
+const STYLE_IMG = "rounded-full h-32 md:h-40 select-none";
 // img h-32
 
 function Profile() {
