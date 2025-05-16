@@ -64,7 +64,7 @@ const CB_LI = ({
         href={web_url}
         target="_blank"
         rel="noreferrer"
-        className="rounded-md p-2 md:p-3 bg-[#f6f6f6] w-full flex gap-2 text-[#0f0f0f] transition duration-300 ease-in-out hover:bg-[#7bafcf]"
+        className="text-[#b8bcc3] p-3 rounded-md border-3 border-[#26264d] w-full flex gap-3 transition duration-300 ease-in-out hover:bg-[#3e3e80]"
       >
         <img src={img_src} alt={img_alt} className="h-7" />
         {web_title}
@@ -76,7 +76,7 @@ const CB_LI = ({
 function Links() {
   return (
     <section className="flex flex-col justify-center items-center select-none">
-      <ul className="w-full flex flex-col gap-4">{LIST_LINKS.map(CB_LI)}</ul>
+      <ul className="w-96 md:w-[39rem] flex flex-col gap-3">{LIST_LINKS.map(CB_LI)}</ul>
     </section>
   );
 }
