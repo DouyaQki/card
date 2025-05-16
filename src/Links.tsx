@@ -76,7 +76,7 @@ const CB_LI = ({
 function Links() {
   return (
     <section className="flex flex-col justify-center items-center select-none">
-      <ul className="w-96 md:w-[39rem] flex flex-col gap-3">{LIST_LINKS.map(CB_LI)}</ul>
+      <ul className="w-80 md:w-[39rem] flex flex-col gap-3">{LIST_LINKS.map(CB_LI)}</ul>
     </section>
   );
 }
