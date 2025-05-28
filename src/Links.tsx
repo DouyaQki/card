@@ -1,5 +1,8 @@
 import { JSX } from "react";
-import xlogo from "./assets/x_logo.svg";
+import x_logo from "./assets/x_logo.svg";
+import linkedin_logo from "./assets/linkedin_logo.svg";
+import github_logo from "./assets/github_logo.svg";
+import youtube_logo from "./assets/youtube_logo.svg";
 
 type T_LIST_LINKS = {
   id: number;
@@ -20,31 +23,28 @@ type T_CB_LINKS = {
 const LIST_LINKS: T_LIST_LINKS = [
   {
     id: 0,
-    img_src: xlogo,
+    img_src: x_logo,
     img_alt: "x logo",
     web_url: "https://x.com/QkiJose",
     web_title: "X",
   },
   {
     id: 1,
-    img_src:
-      "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg",
+    img_src: linkedin_logo,
     img_alt: "linkedin logo",
     web_url: "https://www.linkedin.com/in/jlvillarreal/",
     web_title: "Linkedin",
   },
   {
     id: 2,
-    img_src:
-      "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+    img_src: github_logo,
     img_alt: "",
     web_url: "https://github.com/DouyaQki",
     web_title: "Github",
   },
   {
     id: 3,
-    img_src:
-      "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg",
+    img_src: youtube_logo,
     img_alt: "youtube logo",
     web_url: "https://www.youtube.com/@QkiJose",
     web_title: "YouTube",
@@ -59,7 +59,7 @@ const CB_LI = ({
   web_title,
 }: T_CB_LINKS): JSX.Element => {
   return (
-    <li key={id} >
+    <li key={id}>
       <a
         href={web_url}
         target="_blank"
