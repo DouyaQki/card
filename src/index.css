@@ -6,7 +6,7 @@ body {
 
 #banner-animation {
   animation-name: banner-loop;
-  animation-duration: 2s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
 }
@@ -15,10 +15,10 @@ body {
   0% {
     background-position: 0% 100%;
   }
-  50% {
-    background-position: 0% 45%;
-  }
-    100% {
+    50% {
     background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
   }
 }

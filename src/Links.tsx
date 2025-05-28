@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import xlogo from "./assets/x_logo.svg";
 
 type T_LIST_LINKS = {
   id: number;
@@ -19,8 +20,7 @@ type T_CB_LINKS = {
 const LIST_LINKS: T_LIST_LINKS = [
   {
     id: 0,
-    img_src:
-      "https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg",
+    img_src: xlogo,
     img_alt: "x logo",
     web_url: "https://x.com/QkiJose",
     web_title: "X",
@@ -59,12 +59,12 @@ const CB_LI = ({
   web_title,
 }: T_CB_LINKS): JSX.Element => {
   return (
-    <li key={id}>
+    <li key={id} >
       <a
         href={web_url}
         target="_blank"
         rel="noreferrer"
-        className="text-[#b8bcc3] p-3 rounded-md border-3 border-[#26264d] w-full flex gap-3 transition duration-300 ease-in-out hover:bg-[#3e3e80]"
+        className="text-[#b8bcc3] p-3 rounded-md border-3 border-[#26264d] w-full flex items-center gap-3 transition duration-300 ease-in-out hover:bg-[#3e3e80]"
       >
         <img src={img_src} alt={img_alt} className="h-7" />
         {web_title}
@@ -76,7 +76,9 @@ const CB_LI = ({
 function Links() {
   return (
     <section className="flex flex-col justify-center items-center select-none">
-      <ul className="w-80 md:w-[39rem] flex flex-col gap-3">{LIST_LINKS.map(CB_LI)}</ul>
+      <ul className="w-80 md:w-[39rem] flex flex-col gap-3">
+        {LIST_LINKS.map(CB_LI)}
+      </ul>
     </section>
   );
 }
